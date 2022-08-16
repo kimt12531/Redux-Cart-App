@@ -1,12 +1,13 @@
 .item {
   margin: 1rem 0;
-  background-color: #575757;
+  background-color: #e7e7e7;
   padding: 1rem;
 }
 
 .item h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.75rem;
+  color: #3a3a3a;
 }
 
 .item header {
@@ -19,16 +20,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #3a3a3a;
 }
 
 .quantity span {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #3a3a3a;
 }
 
 .price {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #3a3a3a;
 }
 
 .itemprice {
@@ -45,14 +49,14 @@
 
 .actions button {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #1a8ed1;
   margin-left: 0.5rem;
   padding: 0.15rem 1rem;
-  color: white;
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #4b4b4b;
+  background-color: #1ac5d1;
+  border-color: #1ac5d1;
   color: white;
 }
