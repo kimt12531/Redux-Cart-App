@@ -5,7 +5,7 @@ export const fetchCartData = () => {
   return async (dispatch) => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://food-order-app-a4aeb-default-rtdb.asia-southeast1.firebasedatabase.app/cart.json"
+        "https://react-cart-app-37b01-default-rtdb.asia-southeast1.firebasedatabase.app/cart.json"
       );
 
       if (!response.ok) {
@@ -30,7 +30,7 @@ export const fetchCartData = () => {
         uiActions.showNotification({
           status: "error",
           title: "Error!",
-          message: "Sending cart data failed!",
+          message: "Fetching cart data failed!",
         })
       );
     }
@@ -49,7 +49,7 @@ export const sendCartData = (cart) => {
 
     const sendRequest = async () => {
       const response = await fetch(
-        "https://food-order-app-a4aeb-default-rtdb.asia-southeast1.firebasedatabase.app/cart.json",
+        "https://react-cart-app-37b01-default-rtdb.asia-southeast1.firebasedatabase.app/cart.json",
         {
           method: "PUT",
           body: JSON.stringify({
