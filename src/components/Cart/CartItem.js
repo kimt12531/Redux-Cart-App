@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from "./CartItem.module.css";
 
 import { useDispatch } from "react-redux";

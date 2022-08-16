@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from "./CartButton.module.css";
 
 import { uiActions } from "../../store/ui-slice";

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useSelector } from "react-redux";
 import Card from "../UI/Card";
 import classes from "./Cart.module.css";
