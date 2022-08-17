@@ -5,7 +5,6 @@ import Notification from "./components/UI/Notification";
 import Cart from "./components/Cart/Cart";
 import Layout from "./components/Layout/Layout";
 import Products from "./components/Shop/Products";
-// import { uiActions } from "./store/ui-slice";
 import { sendCartData, fetchCartData } from "./store/cart-actions";
 import { fetchShopData } from "./store/shop-actions";
 

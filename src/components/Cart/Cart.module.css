@@ -5,15 +5,29 @@
 }
 
 .cart h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 0.5rem 0;
   color: #3a3a3a;
   border-bottom: 1px solid #3a3a3a;
   padding-bottom: 8px;
 }
 
+.cart p {
+  margin: 0.5rem 0;
+  color: #3a3a3a;
+}
+
 .cart ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.cart button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
