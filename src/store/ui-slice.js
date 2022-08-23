@@ -2,7 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const uiSlice = createSlice({
   name: "ui",
-  initialState: { cartIsVisible: false, notification: null },
+  initialState: {
+    cartIsVisible: false,
+    notification: null,
+    orderModalShow: false,
+  },
   reducers: {
     toggle(state) {
       state.cartIsVisible = !state.cartIsVisible;
@@ -14,6 +18,10 @@ const uiSlice = createSlice({
         title: action.payload.title,
         message: action.payload.title,
       };
+    },
+
+    setOrderModalShow(state, action) {
+      state.orderModalShow = action.payload.show;
     },
   },
 });

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Card from "../UI/Card";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
-import { cartActions } from "../../store/cart-slice";
+import { uiActions } from "../../store/ui-slice";
 
 const Cart = (props) => {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ const Cart = (props) => {
   const isEmpty = cartItems.length <= 0;
 
   const checkoutCartHandler = () => {
-    dispatch(cartActions.resetCart());
+    dispatch(uiActions.setOrderModalShow({ show: true }));
   };
 
   return (
