@@ -1,20 +1,25 @@
-.order {
-  max-width: 30rem;
-  background-color: #e7e7e7;
-  color: white;
+.items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.order header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid #3a3a3a;
 }
 
 .order h2 {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
   color: #3a3a3a;
-  border-bottom: 1px solid #3a3a3a;
-  padding-bottom: 8px;
 }
 
 .order h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #3a3a3a;
 }
 
